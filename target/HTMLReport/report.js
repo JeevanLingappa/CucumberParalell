@@ -73,8 +73,7 @@ formatter.match({
   "location": "stepDefinations.StepDefination01.user_should_get_something_message(java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat stepDefinations.StepDefination01.user_should_get_something_message(StepDefination01.java:63)\r\n\tat ✽.user should get \"Success - Check box is checked\" message(file:///C:/Users/Gagana%20T/CucumberWithSelenium/CucumberTest02/SeleniumWithCucu/src/test/java/features/CheckBoxFeature.feature:10)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
@@ -140,8 +139,7 @@ formatter.match({
   "location": "stepDefinations.StepDefination01.all_option_should_be_checked()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat stepDefinations.StepDefination01.all_option_should_be_checked(StepDefination01.java:90)\r\n\tat ✽.all option should be checked(file:///C:/Users/Gagana%20T/CucumberWithSelenium/CucumberTest02/SeleniumWithCucu/src/test/java/features/CheckBoxFeature.feature:18)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "user should see the Uncheck button in enabled state",
@@ -151,7 +149,7 @@ formatter.match({
   "location": "stepDefinations.StepDefination01.user_should_see_the_Uncheck_button_in_enabled_state()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
