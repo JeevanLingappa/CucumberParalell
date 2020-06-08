@@ -15,17 +15,22 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import utils.BasePageElements;
 
-public class StepDefination01 {
+public class StepDefination01 extends BasePageElements {
 	public WebDriver driver;
 	public WebDriverWait wait;
 
 	@Given("^user is on SeleniumEasy website$")
 	public void user_is_on_seleniumeasy_website() throws Throwable {
-		System.setProperty("webdriver.chrome.driver", "resources/drivers/chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("https://www.seleniumeasy.com/test/");
-		driver.manage().window().maximize();
+		/*
+		 * System.setProperty("webdriver.chrome.driver",
+		 * "resources/drivers/chromedriver.exe"); driver = new ChromeDriver();
+		 * driver.get("https://www.seleniumeasy.com/test/");
+		 * driver.manage().window().maximize();
+		 */
+		
+		driver = getWebDriver();
 		Thread.sleep(2000);
 		List<WebElement> pop1 = driver.findElements(By.linkText("No, thanks!"));
 

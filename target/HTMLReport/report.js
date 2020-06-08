@@ -241,7 +241,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Multiple Check box demo UnCheck All",
+  "name": "Multiple Check box demo UnCheck All with check all button validation",
   "description": "",
   "keyword": "Scenario",
   "tags": [

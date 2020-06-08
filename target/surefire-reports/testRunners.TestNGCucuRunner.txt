@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: testRunners.TestNGCucuRunner
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.954 s - in testRunners.TestNGCucuRunner
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 26.232 s <<< FAILURE! - in testRunners.TestNGCucuRunner
+testRunners.TestNGCucuRunner.runScenario  Time elapsed: 24.994 s  <<< FAILURE!
+java.lang.AssertionError
+

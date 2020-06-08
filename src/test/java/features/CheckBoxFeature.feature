@@ -19,7 +19,7 @@ Feature: Validation of Check Box demo on seleniumEasy website
 	And user should see the Uncheck button in enabled state	
 	
 @MultiCheckBox	
-  Scenario: Multiple Check box demo UnCheck All
+  Scenario: Multiple Check box demo UnCheck All 
     Given user is on SeleniumEasy website
     And click on StartPracticing 
 	When click on "Check Box Demo"
@@ -29,7 +29,7 @@ Feature: Validation of Check Box demo on seleniumEasy website
 	And user should see the checkall button in enabled state 
 	
 @MultiCheckBox	
-  Scenario: Multiple Check box demo UnCheck All
+  Scenario: Multiple Check box demo UnCheck All with check all button validation
     Given user is on SeleniumEasy website
     And click on StartPracticing 
 	When click on "Check Box Demo"	
