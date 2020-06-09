@@ -25,6 +25,9 @@ formatter.scenario({
     }
   ]
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "user is on SeleniumEasy website",
   "keyword": "Given "
@@ -90,6 +93,9 @@ formatter.scenario({
       "name": "@MultiCheckBox"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "user is on SeleniumEasy website",
@@ -166,6 +172,9 @@ formatter.scenario({
       "name": "@MultiCheckBox"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "user is on SeleniumEasy website",
@@ -252,6 +261,9 @@ formatter.scenario({
       "name": "@MultiCheckBox"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "user is on SeleniumEasy website",
@@ -340,6 +352,12 @@ formatter.scenario({
     }
   ]
 });
+formatter.before({
+  "status": "passed"
+});
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "user is on SeleniumEasy website",
   "keyword": "Given "
@@ -398,6 +416,12 @@ formatter.match({
   "location": "stepDefinations.StepDefination01.user_should_get_message_with_something(java.lang.String)"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 });

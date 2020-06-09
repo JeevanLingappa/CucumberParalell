@@ -1,5 +1,6 @@
 package stepDefinations;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.junit.Assert;
@@ -11,63 +12,85 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pageObjects.BasicExamplePO;
+import pageObjects.CheckBoxPO;
+import pageObjects.DemoHomePO;
 import utils.BasePageElements;
 
 public class StepDefination01 extends BasePageElements {
 	public WebDriver driver;
 	public WebDriverWait wait;
+	public DemoHomePO dm;
+	public BasicExamplePO be;
+	public CheckBoxPO cb;
+	
+	@Before
+	
+	public void initializingTest() throws IOException, InterruptedException
+	{
+		driver = getWebDriver();
+		Thread.sleep(2000);
+		dm = new DemoHomePO(driver);
+		dm.getPopUpList();
+
+		if (dm.getPopUpList().size() > 0) {
+
+			dm.getPopUp().click();
+		}
+
+		
+	}
 
 	@Given("^user is on SeleniumEasy website$")
 	public void user_is_on_seleniumeasy_website() throws Throwable {
-		/*
-		 * System.setProperty("webdriver.chrome.driver",
-		 * "resources/drivers/chromedriver.exe"); driver = new ChromeDriver();
-		 * driver.get("https://www.seleniumeasy.com/test/");
-		 * driver.manage().window().maximize();
-		 */
 		
-		driver = getWebDriver();
-		Thread.sleep(2000);
-		List<WebElement> pop1 = driver.findElements(By.linkText("No, thanks!"));
-
-		if (pop1.size() > 0) {
-			driver.findElement(By.linkText("No, thanks!")).click();
-		}
+		/*
+		 * driver = getWebDriver(); Thread.sleep(2000); dm = new DemoHomePO(driver);
+		 * dm.getPopUpList();
+		 * 
+		 * if (dm.getPopUpList().size() > 0) {
+		 * 
+		 * dm.getPopUp().click(); }
+		 */
 
 	}
 
 	@And("^click on StartPracticing$")
 	public void click_on_startpracticing() throws Throwable {
-		driver.findElement(By.id("btn_basic_example")).click();
+		dm.getStartPractice().click();
+
 	}
 
 	@When("^click on \"([^\"]*)\"$")
 	public void click_on_something(String strArg1) throws Throwable {
 		System.out.println("CLicking on " + strArg1);
-		// Thread.sleep(1000);
-		// WebElement ele1= driver.findElement(By.linkText("Check Box Demo"));
-		// driver.findElement(By.linkText(strArg1)).click();
-		wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(strArg1)));
-		driver.findElement(By.linkText(strArg1)).sendKeys(Keys.ENTER);
+		be = new BasicExamplePO(driver);
+		getExplicitwaitByLinkText(strArg1, 5);
+		be.getSimpleForm(strArg1).sendKeys(Keys.ENTER);
+
 	}
 
 	@And("^select check box under Single check box dem0 section$")
 	public void select_check_box_under_single_check_box_dem0_section() throws Throwable {
-		driver.findElement(By.id("isAgeSelected")).click();
+		
+		cb = new CheckBoxPO(driver);
+		cb.getSingleSelect().click();;
+		
 
 	}
 
 	@Then("^user should get \"([^\"]*)\" message$")
 	public void user_should_get_something_message(String strArg1) throws Throwable {
-
-		Assert.assertTrue(driver.findElement(By.id("isAgeSelected")).isSelected());
-		Assert.assertTrue(driver.findElement(By.id("txtAge")).getText().contains(strArg1));
-		driver.close();
+		Assert.assertTrue(cb.getSingleSelect().isSelected());
+		//Assert.assertTrue(driver.findElement(By.id("isAgeSelected")).isSelected());
+		Assert.assertTrue(cb.getTextValidation().getText().contains(strArg1));
+		//driver.close();
 	}
 
 	// --------------Scenario 2 -----------------//
@@ -104,7 +127,7 @@ public class StepDefination01 extends BasePageElements {
 		System.out.println(buttonValue);
 		// Assert.assertEquals(buttonValue, "Uncheck All");
 		// Assert.assertEquals(buttonValue, "Uncheck All");
-		driver.close();
+		//driver.close();
 	}
 
 	// -------------Scenario3-------------
@@ -144,7 +167,7 @@ public class StepDefination01 extends BasePageElements {
 		String name = driver.findElement(By.id("check1")).getAttribute("Value");
 		System.out.println(name);
 		Assert.assertEquals(name, "Check All");
-		driver.close();
+		//driver.close();
 	}
 
 	// -----Scenario 4
@@ -160,7 +183,7 @@ public class StepDefination01 extends BasePageElements {
 		String bName = driver.findElement(By.id("check1")).getAttribute("Value");
 
 		Assert.assertEquals(bName, "Check All");
-		driver.close();
+		//driver.close();
 	}
 
 	//////////// Radio button validation ---------
@@ -182,8 +205,15 @@ public class StepDefination01 extends BasePageElements {
 	public void user_should_get_message_with_something(String strArg1) throws Throwable {
 		String mess = driver.findElement(By.cssSelector("p.radiobutton")).getText();
 		Assert.assertEquals(mess, strArg1);
-		driver.close();
+		//driver.close();
 
+	}
+	
+	@After
+	public void tearDown()
+	{
+	 driver.close();	
+		
 	}
 
 }

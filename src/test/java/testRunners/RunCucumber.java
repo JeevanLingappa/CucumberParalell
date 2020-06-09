@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features="src/test/java/features",
 		glue="stepDefinations",
-		tags= {"@CheckBox or @RadioButton"}
+		tags= {"@RadioButton"}
 		//tags= {"@MultiCheckBox or @Parallel"}
 		)
 public class RunCucumber {
