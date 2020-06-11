@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.814">
+<testcase classname="Validation of Radio Buttons demo on seleniumEasy website" name="Single Radio button demo" time="12.61">
+<system-out><![CDATA[Given user is on SeleniumEasy website.......................................passed
+And click on StartPracticing................................................passed
+When click on "Radio Buttons Demo"..........................................passed
+And clicks on "Male" radio button...........................................passed
+And clicks on getCheckedValue button........................................passed
+Then user should get  message with "Radio button 'Male' is checked".........passed
+]]></system-out>
+</testcase>
+</testsuite>

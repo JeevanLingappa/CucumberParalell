@@ -5,6 +5,7 @@
     <classes>
       <!--  <class name="testRunners.TestNGCucuRunner"/> -->
        <class name="testRunners.RunCucumber"/>
+       <class name="testRunners.TestNGCucuWithTags"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
