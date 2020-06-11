@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="testRunners.TestNGCucuRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Single check box demo&quot;, &quot;Validation of Check Box demo on seleniumEasy website&quot;)">runScenario("Single check box demo", "Validation of Check Box demo on seleniumEasy website")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,6 +100,16 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="testRunners.TestNGCucuRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Single Radio button demo&quot;, &quot;Validation of Radio Buttons demo on seleniumEasy website&quot;)">runScenario("Single Radio button demo", "Validation of Radio Buttons demo on seleniumEasy website")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="testRunners.TestNGCucuRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Single check box demo&quot;, &quot;Validation of Check Box demo on seleniumEasy website&quot;)">runScenario("Single check box demo", "Validation of Check Box demo on seleniumEasy website")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="testRunners.TestNGCucuRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Multiple Check box demo UnCheck All with check all button validation&quot;, &quot;Validation of Check Box dem...)">runScenario("Multiple Check box demo UnCheck All with check all button validation", "Validation of Check Box dem...)</a> <!-- method navigator-link -->
@@ -129,11 +125,6 @@
                         <a href="#" panel-name="suite-Surefire_suite" title="testRunners.TestNGCucuRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Multiple Check box demo UnCheck All&quot;, &quot;Validation of Check Box demo on seleniumEasy website&quot;)">runScenario("Multiple Check box demo UnCheck All", "Validation of Check Box demo on seleniumEasy website")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="testRunners.TestNGCucuRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Single Radio button demo&quot;, &quot;Validation of Radio Buttons demo on seleniumEasy website&quot;)">runScenario("Single Radio button demo", "Validation of Radio Buttons demo on seleniumEasy website")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
                   </li>
                 </ul>
@@ -146,38 +137,32 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testRunners.TestNGCucuRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Single check box demo&quot;, &quot;Validation of Check Box demo on seleniumEasy website&quot;)">
-                  </a> <!-- runScenario("Single check box demo", "Validation of Check Box demo on seleniumEasy website") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Single check box demo", "Validation of Check Box demo on seleniumEasy website")</span>
-                  <div class="stack-trace">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepDefinations.StepDefination01.user_should_get_something_message(StepDefination01.java:90)
-	at ✽.user should get &quot;Success - Check box is checked&quot; message(file:///C:/Users/Gagana%20T/CucumberWithSelenium/CucumberTest02/SeleniumWithCucu/src/test/java/features/CheckBoxFeature.feature:10)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">testRunners.TestNGCucuRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Single Radio button demo&quot;, &quot;Validation of Radio Buttons demo on seleniumEasy website&quot;)">
+                  </a> <!-- runScenario("Single Radio button demo", "Validation of Radio Buttons demo on seleniumEasy website") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Single Radio button demo", "Validation of Radio Buttons demo on seleniumEasy website")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Single check box demo&quot;, &quot;Validation of Check Box demo on seleniumEasy website&quot;)">
+                  </a> <!-- runScenario("Single check box demo", "Validation of Check Box demo on seleniumEasy website") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Single check box demo", "Validation of Check Box demo on seleniumEasy website")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;Multiple Check box demo UnCheck All with check all button validation&quot;, &quot;Validation of Check Box dem...)">
@@ -204,16 +189,6 @@
                   </a> <!-- runScenario("Multiple Check box demo UnCheck All", "Validation of Check Box demo on seleniumEasy website") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Multiple Check box demo UnCheck All", "Validation of Check Box demo on seleniumEasy website")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Single Radio button demo&quot;, &quot;Validation of Radio Buttons demo on seleniumEasy website&quot;)">
-                  </a> <!-- runScenario("Single Radio button demo", "Validation of Radio Buttons demo on seleniumEasy website") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Single Radio button demo", "Validation of Radio Buttons demo on seleniumEasy website")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -283,28 +258,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'testRunners.TestNGCucuRunner')
-data.setCell(0, 3, 27280);
+data.setCell(0, 3, 19490);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'testRunners.TestNGCucuRunner')
-data.setCell(1, 3, 24755);
+data.setCell(1, 3, 19106);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'testRunners.TestNGCucuRunner')
-data.setCell(2, 3, 24697);
+data.setCell(2, 3, 18822);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'testRunners.TestNGCucuRunner')
-data.setCell(3, 3, 24631);
+data.setCell(3, 3, 17011);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'testRunners.TestNGCucuRunner')
-data.setCell(4, 3, 22006);
+data.setCell(4, 3, 16387);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -336,30 +311,28 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Multiple Check box demo UnCheck All with check all button validation", "Validation of Check Box dem...)</span>
-                <span class="method-start">501 ms</span>
+                <span class="method-name">runScenario("Multiple Check box demo CheckAll", "Validation of Check Box demo on seleniumEasy website")</span>
+                <span class="method-start">428 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Multiple Check box demo CheckAll", "Validation of Check Box demo on seleniumEasy website")</span>
-                <span class="method-start">501 ms</span>
+                <span class="method-name">runScenario("Single check box demo", "Validation of Check Box demo on seleniumEasy website")</span>
+                <span class="method-start">428 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Multiple Check box demo UnCheck All", "Validation of Check Box demo on seleniumEasy website")</span>
-                <span class="method-start">501 ms</span>
+                <span class="method-start">428 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Single Radio button demo", "Validation of Radio Buttons demo on seleniumEasy website")</span>
-                <span class="method-start">501 ms</span>
+                <span class="method-start">429 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("Single check box demo", "Validation of Check Box demo on seleniumEasy website")</span>
-                <span class="method-start">501 ms</span>
+                <span class="method-name">runScenario("Multiple Check box demo UnCheck All with check all button validation", "Validation of Check Box dem...)</span>
+                <span class="method-start">429 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">27790 ms</span>
+                <span class="method-start">19919 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

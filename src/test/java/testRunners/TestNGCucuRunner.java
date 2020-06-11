@@ -9,7 +9,8 @@ import io.cucumber.testng.CucumberOptions;
 		features="src/test/java/features",
 		glue="stepDefinations",
 		tags= {"@CheckBox or @RadioButton"},
-		plugin= {"pretty","timeline:target/Timeline","html:target/HTMLReport","json:target/jsonRport/report.json"},
+		plugin= {"pretty","timeline:target/Timeline","html:target/HTMLReport","json:target/jsonRport/report.json"
+				,"junit:target/jUnitReport/JReport.xml"},
 		monochrome=true
 		)
 public class TestNGCucuRunner extends AbstractTestNGCucumberTests {

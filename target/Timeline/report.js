@@ -1,58 +1,58 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "7f732531-84e8-433c-a21c-c0244dd8a998",
-    "feature": "Validation of Check Box demo on seleniumEasy website",
-    "scenario": "Multiple Check box demo UnCheck All",
-    "start": 1591858430026,
-    "end": 1591858451800,
-    "group": 17,
-    "content": "",
-    "className": "passed",
-    "tags": "@checkbox,@multicheckbox,"
-  },
-  {
-    "id": "b67026d7-a44d-42ce-afa3-c77703a41b95",
-    "feature": "Validation of Check Box demo on seleniumEasy website",
-    "scenario": "Multiple Check box demo CheckAll",
-    "start": 1591858430027,
-    "end": 1591858454552,
-    "group": 16,
-    "content": "",
-    "className": "passed",
-    "tags": "@checkbox,@multicheckbox,"
-  },
-  {
-    "id": "4d42e467-d692-4a7d-9ab4-289876ca8cf9",
+    "id": "29e67880-3003-4d9f-bd7a-2d700488d253",
     "feature": "Validation of Radio Buttons demo on seleniumEasy website",
     "scenario": "Single Radio button demo",
-    "start": 1591858430027,
-    "end": 1591858454428,
+    "start": 1591862907443,
+    "end": 1591862926053,
     "group": 19,
     "content": "",
     "className": "passed",
     "tags": "@radiobutton,@parallel,"
   },
   {
-    "id": "141ba6a9-2843-468a-bb63-082fb70fa5c1",
+    "id": "bb482c3b-d085-49ac-b9b7-9ac51580358d",
+    "feature": "Validation of Check Box demo on seleniumEasy website",
+    "scenario": "Multiple Check box demo UnCheck All",
+    "start": 1591862907443,
+    "end": 1591862926720,
+    "group": 17,
+    "content": "",
+    "className": "passed",
+    "tags": "@checkbox,@multicheckbox,"
+  },
+  {
+    "id": "2f4103f9-0721-4888-9deb-846a399f41f8",
     "feature": "Validation of Check Box demo on seleniumEasy website",
     "scenario": "Multiple Check box demo UnCheck All with check all button validation",
-    "start": 1591858430026,
-    "end": 1591858454494,
+    "start": 1591862907444,
+    "end": 1591862924242,
     "group": 18,
     "content": "",
     "className": "passed",
     "tags": "@checkbox,@multicheckbox,"
   },
   {
-    "id": "676250b4-83f4-4b5d-8009-0cce0db02846",
+    "id": "a86210c7-7cf5-45b1-a523-6d5770f73c7a",
+    "feature": "Validation of Check Box demo on seleniumEasy website",
+    "scenario": "Multiple Check box demo CheckAll",
+    "start": 1591862907443,
+    "end": 1591862926336,
+    "group": 16,
+    "content": "",
+    "className": "passed",
+    "tags": "@checkbox,@multicheckbox,"
+  },
+  {
+    "id": "d035eeac-67f4-4248-a79b-06c6dbe289e8",
     "feature": "Validation of Check Box demo on seleniumEasy website",
     "scenario": "Single check box demo",
-    "start": 1591858430027,
-    "end": 1591858457077,
+    "start": 1591862907443,
+    "end": 1591862923613,
     "group": 15,
     "content": "",
-    "className": "failed",
+    "className": "passed",
     "tags": "@checkbox,@multicheckbox,@parallel,"
   }
 ]);
