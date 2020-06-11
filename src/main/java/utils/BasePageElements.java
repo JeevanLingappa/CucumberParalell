@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -27,9 +28,20 @@ public class BasePageElements {
 		
 		prop.load(fis);
 		String SITurl = prop.getProperty("url");
-		System.setProperty("webdriver.chrome.driver", "resources/drivers/chromedriver.exe");
 		
-		driver = new ChromeDriver();
+		
+		if(prop.getProperty("browser").contentEquals("chrome"))
+		{
+			System.setProperty("webdriver.chrome.driver", "resources/drivers/chromedriver.exe");
+			driver = new ChromeDriver();
+		}
+		else if(prop.getProperty("browser").contentEquals("ie")) {
+			System.setProperty("webdriver.ie.driver", "resources/drivers/IEDriverServer.exe");
+			driver = new InternetExplorerDriver();
+			
+		}
+		
+		
 		driver.get(SITurl);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

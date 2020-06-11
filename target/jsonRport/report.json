@@ -1,0 +1,673 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-11T06:53:50.027Z",
+        "before": [
+          {
+            "result": {
+              "duration": 25940592400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.StepDefination01.initializingTest()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Single check box demo",
+        "description": "",
+        "id": "validation-of-check-box-demo-on-seleniumeasy-website;single-check-box-demo",
+        "after": [
+          {
+            "result": {
+              "duration": 126449900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.StepDefination01.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on SeleniumEasy website",
+            "match": {
+              "location": "stepDefinations.StepDefination01.user_is_on_seleniumeasy_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 104961300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click on StartPracticing",
+            "match": {
+              "location": "stepDefinations.StepDefination01.click_on_startpracticing()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 768227100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click on \"Check Box Demo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Check Box Demo",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinations.StepDefination01.click_on_something(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 62559500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "select check box under Single check box dem0 section",
+            "match": {
+              "location": "stepDefinations.StepDefination01.select_check_box_under_single_check_box_dem0_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat stepDefinations.StepDefination01.user_should_get_something_message(StepDefination01.java:90)\r\n\tat ✽.user should get \"Success - Check box is checked\" message(file:///C:/Users/Gagana%20T/CucumberWithSelenium/CucumberTest02/SeleniumWithCucu/src/test/java/features/CheckBoxFeature.feature:10)\r\n",
+              "duration": 24197400,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "user should get \"Success - Check box is checked\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Success - Check box is checked",
+                  "offset": 17
+                }
+              ],
+              "location": "stepDefinations.StepDefination01.user_should_get_something_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CheckBox"
+          },
+          {
+            "name": "@MultiCheckBox"
+          },
+          {
+            "name": "@Parallel"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-11T06:53:50.027Z",
+        "before": [
+          {
+            "result": {
+              "duration": 22018390700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.StepDefination01.initializingTest()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Multiple Check box demo CheckAll",
+        "description": "",
+        "id": "validation-of-check-box-demo-on-seleniumeasy-website;multiple-check-box-demo-checkall",
+        "after": [
+          {
+            "result": {
+              "duration": 101251700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.StepDefination01.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 449900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user is on SeleniumEasy website",
+            "match": {
+              "location": "stepDefinations.StepDefination01.user_is_on_seleniumeasy_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 292599200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "click on StartPracticing",
+            "match": {
+              "location": "stepDefinations.StepDefination01.click_on_startpracticing()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1415599100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "click on \"Check Box Demo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Check Box Demo",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinations.StepDefination01.click_on_something(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 284238100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "check all under Multiple check box demo section",
+            "match": {
+              "location": "stepDefinations.StepDefination01.check_all_under_Multiple_check_box_demo_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 271667300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "all option should be checked",
+            "match": {
+              "location": "stepDefinations.StepDefination01.all_option_should_be_checked()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 114298600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user should see the Uncheck button in enabled state",
+            "match": {
+              "location": "stepDefinations.StepDefination01.user_should_see_the_Uncheck_button_in_enabled_state()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CheckBox"
+          },
+          {
+            "name": "@MultiCheckBox"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-11T06:53:50.026Z",
+        "before": [
+          {
+            "result": {
+              "duration": 18184385500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.StepDefination01.initializingTest()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Multiple Check box demo UnCheck All",
+        "description": "",
+        "id": "validation-of-check-box-demo-on-seleniumeasy-website;multiple-check-box-demo-uncheck-all",
+        "after": [
+          {
+            "result": {
+              "duration": 398285500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.StepDefination01.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user is on SeleniumEasy website",
+            "match": {
+              "location": "stepDefinations.StepDefination01.user_is_on_seleniumeasy_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1139009300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "click on StartPracticing",
+            "match": {
+              "location": "stepDefinations.StepDefination01.click_on_startpracticing()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1265583500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "click on \"Check Box Demo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Check Box Demo",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinations.StepDefination01.click_on_something(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 363307100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "check all under Multiple check box demo section",
+            "match": {
+              "location": "stepDefinations.StepDefination01.check_all_under_Multiple_check_box_demo_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 166230200,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "click on uncheck all button",
+            "match": {
+              "location": "stepDefinations.StepDefination01.click_on_uncheck_all_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 176063600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "all option should be Unchecked",
+            "match": {
+              "location": "stepDefinations.StepDefination01.all_option_should_be_unchecked()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 56940500,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user should see the checkall button in enabled state",
+            "match": {
+              "location": "stepDefinations.StepDefination01.user_should_see_the_checkall_button_in_enabled_state()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CheckBox"
+          },
+          {
+            "name": "@MultiCheckBox"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-11T06:53:50.026Z",
+        "before": [
+          {
+            "result": {
+              "duration": 21925034800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.StepDefination01.initializingTest()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Multiple Check box demo UnCheck All with check all button validation",
+        "description": "",
+        "id": "validation-of-check-box-demo-on-seleniumeasy-website;multiple-check-box-demo-uncheck-all-with-check-all-button-validation",
+        "after": [
+          {
+            "result": {
+              "duration": 172685100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.StepDefination01.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user is on SeleniumEasy website",
+            "match": {
+              "location": "stepDefinations.StepDefination01.user_is_on_seleniumeasy_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 247409800,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "click on StartPracticing",
+            "match": {
+              "location": "stepDefinations.StepDefination01.click_on_startpracticing()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1528550800,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "click on \"Check Box Demo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Check Box Demo",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinations.StepDefination01.click_on_something(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 294806000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "check all under Multiple check box demo section",
+            "match": {
+              "location": "stepDefinations.StepDefination01.check_all_under_Multiple_check_box_demo_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 223667500,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "unchecks option1 in the checkbox list",
+            "match": {
+              "location": "stepDefinations.StepDefination01.unchecks_option1_in_the_checkbox_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56061000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "button should change as checkAll",
+            "match": {
+              "location": "stepDefinations.StepDefination01.button_should_change_as_checkall()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CheckBox"
+          },
+          {
+            "name": "@MultiCheckBox"
+          }
+        ]
+      }
+    ],
+    "name": "Validation of Check Box demo on seleniumEasy website",
+    "description": "",
+    "id": "validation-of-check-box-demo-on-seleniumeasy-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/CheckBoxFeature.feature",
+    "tags": [
+      {
+        "name": "@CheckBox",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-11T06:53:50.027Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10844500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.initializeTest()"
+            }
+          },
+          {
+            "result": {
+              "duration": 21970733000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.StepDefination01.initializingTest()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Single Radio button demo",
+        "description": "",
+        "id": "validation-of-radio-buttons-demo-on-seleniumeasy-website;single-radio-button-demo",
+        "after": [
+          {
+            "result": {
+              "duration": 339977800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.StepDefination01.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 499600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on SeleniumEasy website",
+            "match": {
+              "location": "stepDefinations.StepDefination01.user_is_on_seleniumeasy_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 228868500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click on StartPracticing",
+            "match": {
+              "location": "stepDefinations.StepDefination01.click_on_startpracticing()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1355628200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click on \"Radio Buttons Demo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Radio Buttons Demo",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinations.StepDefination01.click_on_something(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 225127100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "clicks on \"Male\" radio button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Male",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinations.StepDefination01.clicks_on_something_radio_button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 146136400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "clicks on getCheckedValue button",
+            "match": {
+              "location": "stepDefinations.StepDefination01.clicks_on_getcheckedvalue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 104286500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user should get  message with \"Radio button \u0027Male\u0027 is checked\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Radio button \u0027Male\u0027 is checked",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinations.StepDefination01.user_should_get_message_with_something(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RadioButton"
+          },
+          {
+            "name": "@Parallel"
+          }
+        ]
+      }
+    ],
+    "name": "Validation of Radio Buttons demo on seleniumEasy website",
+    "description": "",
+    "id": "validation-of-radio-buttons-demo-on-seleniumeasy-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/RadioButtonFeature.feature",
+    "tags": [
+      {
+        "name": "@RadioButton",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

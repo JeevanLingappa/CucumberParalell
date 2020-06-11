@@ -76,7 +76,8 @@ formatter.match({
   "location": "stepDefinations.StepDefination01.user_should_get_something_message(java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat stepDefinations.StepDefination01.user_should_get_something_message(StepDefination01.java:90)\r\n\tat ✽.user should get \"Success - Check box is checked\" message(file:///C:/Users/Gagana%20T/CucumberWithSelenium/CucumberTest02/SeleniumWithCucu/src/test/java/features/CheckBoxFeature.feature:10)\r\n",
+  "status": "failed"
 });
 formatter.after({
   "status": "passed"
