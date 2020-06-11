@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
 		tags= {"@RadioButton"},
 		plugin= {"pretty","timeline:target/Timeline"
 				,"html:target/HTMLReport"
-				,"json:target/jsonRport/report.json"
+				,"json:target/jsonRport/report1.json"
 				,"junit:target/jUnitReport/JReport.xml"},
 		monochrome=true
 		)

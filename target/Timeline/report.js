@@ -1,11 +1,11 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "6e3b8024-5ab6-4941-82ff-fdd6dd05d271",
+    "id": "033fd570-f061-49e7-84f9-df43afaf17b5",
     "feature": "Validation of Radio Buttons demo on seleniumEasy website",
     "scenario": "Single Radio button demo",
-    "start": 1591864240083,
-    "end": 1591864252693,
+    "start": 1591867016999,
+    "end": 1591867032521,
     "group": 1,
     "content": "",
     "className": "passed",

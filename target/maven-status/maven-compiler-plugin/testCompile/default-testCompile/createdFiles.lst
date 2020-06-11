@@ -1,4 +1,5 @@
 testRunners\RunCucumber.class
+testRunners\TestNGCucuWithTags.class
 testRunners\TestNGCucuRunner.class
 stepDefinations\Hooks.class
 stepDefinations\StepDefination01.class
